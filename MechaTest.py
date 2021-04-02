@@ -15,7 +15,6 @@ def main():
             self.Inicio()
             master.title("MechaTest")
     
-        #https://recursospython.com/guias-y-manuales/posicionar-elementos-en-tkinter/
         #Funcion principal para instansear todos los elementos y variables globales
         def Inicio(self):
 
