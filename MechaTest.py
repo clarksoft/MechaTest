@@ -20,9 +20,6 @@ def main():
 
             self.IniciarVariables()
 
-            
-
-
             #Set text Panel for text
             self.textPanel = Text(self, height = 7, width = 60, bd = 5, wrap = WORD)
             self.textPanel.insert(END, self.lista, 'color')
@@ -113,7 +110,7 @@ def main():
 
         def CompareKeyStrokes(self):
             if self.auxList[0] == self.pattern[:-1]:
-                print("Bien escrio")
+                print("Bien escrito")
                 self.textPanel.tag_add(self.pattern, self.testInicio, self.testFinal)
                 self.textPanel.tag_config(self.pattern, foreground = "green")
                 self.rightWords += 1
@@ -132,7 +129,7 @@ def main():
                 print(self.auxList[0])
 
                 if self.auxList[0] == self.pattern:
-                    print("Bien escrio")
+                    print("Bien escrito")
                     self.textPanel.tag_add(self.pattern, self.testInicio, END)
                     self.textPanel.tag_config(self.pattern, foreground = "green")
                     self.rightWords += 1
@@ -159,7 +156,7 @@ def main():
                 self.testFinal = "1" + "." + str(calc - 1)
                 self.primerSpace = True
             else:
-                print("List empy... Done...") 
+                print("List empty... Done...") 
 
         def checkList(self):
             if self.auxList:
